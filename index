@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        I  {
+            cursor:  none
+        }
+body {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loading {
+    backgroundcolour: #FFF;
+    display: fixed
+}
+.loading img {
+    display: black;
+    min-height: 209px;
+    min-width:  200px;
+
+}
+.mouse {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: #fff782;
+    position: absolute;
+    animation: mouseAnimation .5s
+        infinite ease-in-out
+        alternate;
+        left: 0;
+        top: 0;
+
+}
+@keyframes mouseAnimation {
+    from {
+        width: 25px;
+        height: 25px
+    }
+    to{
+        width: 15px;
+        height: 15px;
+
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="loading"
+     <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPok%25C3%25A9mon&psig=AOvVaw1FAmpvqn97G5DGDzgw2T-r&ust=1686803649974000&source=images&cd=vfe&ved=2ahUKEwjy3pW098H_AhUGitgFHc8oAx4Qr4kDegUIARDdAQ"
+     alt="loading"
+</div>
+<div class="mouse original"></div>
+<script>
+    $(".loading").height($(window).height());
+    $(".loading").width($(window).width());
+    $(".loading img").css({
+        paddingTop: ($(".loading").
+        height() - $(".loading img").
+        height())/ 2,
+        paddingLeft: ($(".loading").
+        width()- $(".loading img")
+        .width())/2
+    
+
+    })
+    $(window).mousemove(function(e)
+
+{
+    "use strict";
+    $(".original").clone(true).
+      appendTo("body").css
+      left: e.pageX - 16,
+      top; e.pageY - 16
+}).removeClass("original");
+
+
+
+
+</script>
+</body>
+</html>
